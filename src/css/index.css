@@ -306,11 +306,15 @@ main #buttons {
     font-size: var(--sz-txt);
     text-decoration: none;
     letter-spacing: 2px;
+    transition: 0.5s all ease-in;
 }
 #btn__proj:hover {
     background: var(--clr-main);
+    transition: 0.5s all ease-in-out;
+}
+#btn__proj:hover a {
     color: var(--alt);
-    transition: 0.5s all ease-in;
+    transition: 0.5s all ease-in-out;
 }
 #btn__prev,
 #btn__next {

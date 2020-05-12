@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="developer" content="Christopher Harris">
+    <!-- title -->
+    <title>ASGARD | Homepage</title>
+    <!-- css -->
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <!-- js -->
+    <script defer src="src/js/nav.js"></script>
+    <script defer src="src/js/showcase.js"></script>
+    <!-- libs -->
+    <script src="https://kit.fontawesome.com/4dff4a55ad.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav -->
+    <nav class="nav" id="nav" style="top: -200px; left: 0">
+        <!-- nav : ul -->
+        <ul>
+            <!-- links -->
+            <li><a href="#"><i class="fas fa-h-square"></i>home</a></li>
+            <li><a href="#"><i class="fab fa-github-square"></i>github</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i>linkedin</a></li>
+            <!-- links -->
+        </ul>
+        <!-- nav : ul -->
+    </nav>
+    <!-- nav -->
+    
+    <!-- header -->
+    <header class="header" id="header">
+        <!-- elmnts -->
+        <div class="elmnts">
+        <!-- btn : menu -->
+        <button id="btn__menu">
+            <i class="fas fa-bars" id="menu__icon"></i>
+        </button>
+        <!-- btn : menu -->        
+        </div>
+        <div class="elmnts" id="title">
+            <i class="fas fa-cube"></i>
+            <h1 class="title">asgard</h1>
+            <p class="tag">template of the nine realms</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, repellendus!</p>
+        </div>
+        <!-- elmnts -->
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+    <main class="main">
+        <!-- projects -->
+        <section class="content" id="projects">
+            <!-- elmnts -->
+            <div class="elmnts">
+                <!-- project -->
+                <i class="fab fa-buffer"></i>
+                <h3 class="title"><span id="project__txt"></span></h3>
+                <p class="tag">A Cosmic Tour of The Realms</p>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, amet.</p>
+                <!-- project -->
+            </div>
+            <!-- elmnts -->
+        </section>
+        <!-- projects -->
+
+        <!-- buttons -->
+        <section class="content" id="buttons">
+            <!-- btn prev [ left ] -->
+            <button id="btn__prev" onclick="panel__next(-1)"><i class="fas fa-angle-left"></i></button>
+            <!-- btn prev [ left ] -->
+            
+            <!-- btn proj [ center ] -->
+            <button id="btn__proj">
+                <a href=""></a>
+            </button>
+            <!-- btn proj [ center ] -->
+
+            <!-- btn prev [ right ] -->
+            <button id="btn__next" onclick="panel__next(1)"><i class="fas fa-angle-right"></i></button>
+            <!-- btn prev [ right ] -->
+        </section>
+        <!-- buttons -->
+
+        <!-- showcase -->
+        <section class="content" id="showcase">
+            <!-- panels -->
+            <div class="panels">
+                <img src="src/css/img/panels1.jpg" alt="ALFHEIM">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/panels2.jpg" alt="HELHEIM">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/panels3.jpg" alt="JOTUNHEIM">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/panels4.jpg" alt="MIDGARD">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/panels5.jpg" alt="MUSPELLHEIM">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/panels6.jpg" alt="NIDAVELLIR">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/panels7.png" alt="NIFLHEIM">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/panels8.png" alt="VANAHEIM">
+            </div>
+            <div class="panels">
+                <img src="src/css/img/background.jpg" alt="ASGARD">
+            </div>
+            <!-- panels -->
+        </section>
+        <!-- showcase -->
+
+        <!-- thumbnails -->
+        <section class="content" id="thumbnails">
+            <!-- thumbs -->
+            <img src="src/css/img/panels1.jpg" alt="ALFHEIM" class="thumbs" onclick="panel__current(1)">
+            <img src="src/css/img/panels2.jpg" alt="HELHEIM" class="thumbs" onclick="panel__current(2)">
+            <img src="src/css/img/panels3.jpg" alt="JOTUNHEIM" class="thumbs" onclick="panel__current(3)">
+            <img src="src/css/img/panels4.jpg" alt="MIDGARD" class="thumbs" onclick="panel__current(4)">
+            <img src="src/css/img/panels5.jpg" alt="MUSPELLHEIM" class="thumbs" onclick="panel__current(5)">
+            <img src="src/css/img/panels6.jpg" alt="NIDAVELLIR" class="thumbs" onclick="panel__current(6)">
+            <img src="src/css/img/panels7.png" alt="NIFLHEIM" class="thumbs" onclick="panel__current(7)">
+            <img src="src/css/img/panels8.png" alt="VANAHEIM" class="thumbs" onclick="panel__current(8)">
+            <img src="src/css/img/background.jpg" alt="ASGARD" class="thumbs" onclick="panel__current(9)">
+            <!-- thumbs -->
+        </section>
+        <!-- thumbnails -->
+    </main>
+    <!-- main -->
+
+    <!-- article -->
+    <article class="article">
+        <div class="elmnts">
+            <h3 class="title">discover more</h3>
+            <p class="tag">Lorem ipsum dolor sit amet.</p>
+            <p class="text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, suscipit? 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, suscipit? 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, suscipit? 
+            </p>
+            <i class="fab fa-github-square"></i>
+            <p class="text">view all of the nine realms templating system on github</p>
+        </div>
+    </article>
+    <!-- article -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <!-- elmnts -->
+        <div class="elmnts">
+            <h5 class="title">asgard</h5>
+            <p class="tag">developed by christopher harris</p>
+        </div>
+        <div class="elmnts">
+            <p class="text">thank you for visiting this page</p>
+        </div>
+        <!-- elmnts -->
+    </footer>
+    <!-- footer -->
+</body>
+</html>
